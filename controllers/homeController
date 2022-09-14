@@ -1,9 +1,10 @@
-'use strict';
-const {LocalStorage}  = require('node-localstorage');
-const localstorage = new LocalStorage('./scracth');
+"use strict";
+const { LocalStorage } = require("node-localstorage");
+const localstorage = new LocalStorage("./scracth");
 
 const indexView = (req, res, next) => {
-  const data = localstorage.getItem("user") !== null
+  const data =
+    localstorage.getItem("user") !== null
       ? JSON.parse(localstorage.getItem("user"))
       : null;
   if (data !== null) {
@@ -34,5 +35,5 @@ module.exports = {
   // iconsView,
   // mapView,
   // profileView,
-  tableView
+  tableView,
 };
