@@ -1,5 +1,5 @@
 var IOTdb = require("../model/model");
-
+const moment = require("moment");
 // create and save new user
 exports.create = (req, res) => {
   // validate request
@@ -11,7 +11,9 @@ exports.create = (req, res) => {
   // new user
   const iot = new IOTdb({
     name: req.body.name,
-    value: req.body.value,
+    pinLed: req.body.pinLed,
+    pinSw: req.body.pinSw,
+    date: moment(new Date()).format("YYYY-MM-DD HH:mm:ss"),
   });
 
   // save user in the database
@@ -35,7 +37,7 @@ exports.find = (req, res) => {
   if (req.query.id) {
     const id = req.query.id;
 
-    IOTdb.findById(id)
+    IOTdb.findById(id) //tìm theo id
       .then((data) => {
         if (!data) {
           res.status(404).send({ message: "Not found user with id " + id });
@@ -47,7 +49,10 @@ exports.find = (req, res) => {
         res.status(500).send({ message: "Erro retrieving user with id " + id });
       });
   } else {
-    IOTdb.find()
+    var mysort = { date: -1 };
+    IOTdb.find() // tìm tất cả
+      .sort(mysort)
+      .limit(10)
       .then((iot) => {
         res.send(iot);
       })
