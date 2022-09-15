@@ -1,0 +1,33 @@
+<!-- <tr>
+    <td>1</td>
+    <td>UserName</td>
+    <td>Example@Email</td>
+    <td>Male</td>
+    <td>Active</td>
+    <td>
+        <a href="/update-user" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a href="#" class="btn border-shadow delete">
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+</tr> -->
+
+<% for(var i=0; i < esdInfos.length; i++) { %>
+    <tr>
+        <td>
+            <%= i + 1 %>
+        </td>
+        <td>
+            <%= esdInfos[i].esdName %>
+        </td>
+        <td>
+            <%= esdInfos[i].location %>
+        </td>
+        <td>
+            <%= esdInfos[i].date %>
+        </td>
+        
+    </tr>
+    <% } %>

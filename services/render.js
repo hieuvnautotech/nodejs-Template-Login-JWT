@@ -25,6 +25,18 @@ exports.homeRoutes = (req, res) => {
     });
 };
 
+exports.esdRegisterRoutes = (req, res) => {
+  // Make a get request to /api/users
+  axios
+    .get("http://localhost:3000/api/iotInfo")
+    .then(function (response) {
+      res.render("esdRegister", { esdInfos: response.data });
+    })
+    .catch((err) => {
+      res.send(err);
+    });
+};
+
 exports.add_user = (req, res) => {
   res.render("add_user");
 };
