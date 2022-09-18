@@ -25,20 +25,67 @@
     <div class="row">
       <div class="col">
         <div class="card">
-          <!-- Card header -->
-
+          
           <!-- Add ESD new -->
-          <div class="card-header border-0">
+          <nav class="main-nav">
+            <ul>
+              
+              <li><a class="signup" href="#0">Create new ESD</a></li>
+            </ul>
+          </nav>
+          
+          <div class="user-modal">
+              <div class="user-modal-container">
+                
+                  
+                  <p>New ESD</p>
+                
+          
+                
+          
+                <div id="signup">
+                  <form class="form" action="/api/iotInfo" method="POST">
+                    <p class="fieldset">
+                      <label class="image-replace username" for="signup-username">ESD name</label>
+                      <input class="full-width has-padding has-border" name="id" type="hidden" value="">
+                      <input class="full-width has-padding has-border" name="name" type="text" placeholder="ESD name">
+                      <span class="error-message">Your ESD name can only contain numeric and alphabetic symbols!</span>
+                    </p>
+          
+                    <p class="fieldset">
+                      <label class="image-replace email" for="signup-email">Location</label>
+                      <input class="full-width has-padding has-border" id="signup-email" type="text" placeholder="Location">
+                      <span class="error-message">Your location can only contain numeric and alphabetic symbols!</span>
+                    </p>
+          
+                    
+          
+                    
+          
+                    <p class="fieldset">
+                      <input class="full-width has-padding" type="submit" value="Save">
+                    </p>
+                  </form>
+          
+                  <a href="#0" class="cd-close-form">Close</a>
+                </div>
+          
+                
+                
+              </div>
+            </div>
+
+
+
+          <!-- <div class="card-header border-0">
               <div class="box-nav d-flex justify-between">
                 <button type="button" href="/add-user" class="modal-btn">Register ESD</button>
-                <!-- <a href="/add-user" class="border-shadow">
-                  <span class="text-gradient">Register ESD <i class="fas fa-user"></i></span>
-                </a> -->
+                
               </div>
 
-            <!-- <h3 class="mb-0">Register ESD</h3> -->
+          
           </div>
-          <!-- modal create new esd -->
+          
           <div class="modal-bg">
             <div class="modal">
               <h2>asdasdasd</h2>
@@ -49,7 +96,7 @@
               <button>asdasd</button>
               <span class="modal-close">x</span>
             </div>
-          </div>
+          </div> -->
 
           <!-- Light table -->
           <div class="table-responsive">
