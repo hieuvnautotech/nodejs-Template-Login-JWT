@@ -10,7 +10,6 @@
 //   res.render("update_user");
 // };
 
-
 const axios = require("axios");
 
 exports.homeRoutes = (req, res) => {
@@ -50,4 +49,8 @@ exports.update_user = (req, res) => {
     .catch((err) => {
       res.send(err);
     });
+};
+
+exports.add_user = (req, res) => {
+  res.render("add_user");
 };

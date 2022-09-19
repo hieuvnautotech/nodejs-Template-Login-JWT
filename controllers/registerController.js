@@ -7,7 +7,7 @@ exports.create = (req, res) => {
     res.status(400).send({ message: "Content can not be emtpy!" });
     return;
   }
-
+  console.log("ddf");
   // new user
   const iotInfo = new iotInfoDb({
     esdName: req.body.esdName,
@@ -20,7 +20,7 @@ exports.create = (req, res) => {
     .save(iotInfo)
     .then((data) => {
       res.send(data);
-      // res.redirect("/add-user");
+      // res.redirect("/esdRegister");
     })
     .catch((err) => {
       res.status(500).send({

@@ -14,6 +14,7 @@ router.get("/", indexView);
 // router.get('/profile', profileView);
 router.get("/table", services.homeRoutes); // nhấn nut bên layout thì gọi service ra
 router.get("/esdRegister", services.esdRegisterRoutes);
+router.get("/add-user", services.add_user);
 
 // API
 router.post("/api/users", jsonParser, controller.create);

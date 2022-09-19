@@ -48,7 +48,7 @@
 
 
 
-* {
+/* * {
     box-sizing: border-box;
 }
 html, body {
@@ -87,7 +87,7 @@ html.modal-active, body.modal-active {
 }
 #modal-container.one.out .modal-background .modal {
     animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
+} */
 
 
 
@@ -98,8 +98,15 @@ html.modal-active, body.modal-active {
 
 
 
-
-
+/* .signupBtn {
+  padding: 10px 30px;
+  color: white;
+  border: 1px;
+  background-color: #2980b9;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -112,7 +119,7 @@ html.modal-active, body.modal-active {
   }
   
   body {
-      background: #d83d3d;
+      background: whitesmoke;
   }
   
   .main-nav {
@@ -143,27 +150,28 @@ html.modal-active, body.modal-active {
     line-height: 45px;
     color: #FFF;
       -webkit-transition: all 0.30s ease-in-out;
+      transition: all 0.30s ease-in-out;
         -moz-transition: all 0.30s ease-in-out;
         -ms-transition: all 0.30s ease-in-out;
         -o-transition: all 0.30s ease-in-out;
   }
-  
+  /* nut create new esd */
   .main-nav li:nth-child(1) a {
-      background: #d83d3d;
-      border: 2px solid #fff;
+      background: rgb(63, 63, 243);
+      border: 2px solid rgb(172, 172, 243);
   }
   .main-nav li:nth-child(1) a:hover {
-      background: #fff;
-      color: #d83d3d;
+      background: rgb(172, 172, 243);
+      color: white;
   }
   
   .main-nav li:nth-child(2) a {
-    background: #9e2c2c;
-      border: 2px solid #9e2c2c;
+    background: rgb(172, 172, 243);
+      border: 2px solid rgb(172, 172, 243);
   }
   .main-nav li:nth-child(2) a:hover {
-      background: #b13131;
-      border: 2px solid #b13131;
+      background: rgb(172, 172, 243);
+      border: 2px solid rgb(172, 172, 243);
   }
   
   .user-modal {
@@ -172,7 +180,7 @@ html.modal-active, body.modal-active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(127, 37, 37, 0.9);
+    background: rgba(228, 221, 221, 0.9);
     z-index: 3;
     overflow-y: auto;
     cursor: pointer;
@@ -239,12 +247,12 @@ html.modal-active, body.modal-active {
     width: 100%;
     height: 50px;
     line-height: 50px;
-    background: #d2d8d8;
+    background: rgb(172, 172, 243);
     color: #809191;
       text-decoration: none;
   }
   .user-modal-container .switcher a.selected {
-    background: #FFF;
+    background: rgb(172, 172, 243);
     color: #505260;
   }
   @media only screen and (min-width: 600px) {
@@ -317,7 +325,7 @@ html.modal-active, body.modal-active {
     padding: 12px 20px 12px 50px;
   }
   .form input.has-border {
-    border: 1px solid #d2d8d8;
+    border: 1px solid rgb(172, 172, 243);
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -330,7 +338,7 @@ html.modal-active, body.modal-active {
     outline: none;
   }
   .form input.has-error {
-    border: 1px solid #d76666;
+    border: 1px solid rgb(172, 172, 243);
   }
   .form input[type=password] {
     /* space left for the HIDE button */
@@ -339,8 +347,8 @@ html.modal-active, body.modal-active {
   .form input[type=submit] {
     padding: 16px 0;
     cursor: pointer;
-    background: #F64747;
-    color: #FFF;
+    background: #6284f5;
+    color: rgb(172, 172, 243);
     font-weight: bold;
     border: none;
     -webkit-appearance: none;
@@ -349,15 +357,16 @@ html.modal-active, body.modal-active {
     -o-appearance: none;
     appearance: none;
       -webkit-transition: all 0.30s ease-in-out;
+      transition: all 0.30s ease-in-out;
         -moz-transition: all 0.30s ease-in-out;
         -ms-transition: all 0.30s ease-in-out;
         -o-transition: all 0.30s ease-in-out;
   }
   .form input[type=submit]:hover {
-      background: #d83d3d;
+      background: rgb(172, 172, 243);
   }
   .no-touch .form input[type=submit]:hover, .no-touch .form input[type=submit]:focus {
-    background: #d83d3d;
+    background: rgb(172, 172, 243);
     outline: none;
   }
   .form .hide-password {
@@ -367,7 +376,7 @@ html.modal-active, body.modal-active {
     right: 0;
     top: 0;
     padding: 6px 15px;
-    border-left: 1px solid #d2d8d8;
+    border-left: 1px solid rgb(172, 172, 243);
     top: 50%;
     bottom: auto;
     -webkit-transform: translateY(-50%);
@@ -384,10 +393,10 @@ html.modal-active, body.modal-active {
     position: absolute;
     left: -5px;
     bottom: -35px;
-    background: rgba(215, 102, 102, 0.9);
+    background: rgb(172, 172, 243);
     padding: .8em;
     z-index: 2;
-    color: #FFF;
+    color: rgb(172, 172, 243);
     font-size: 13px;
     font-size: 0.8125rem;
     border-radius: 0.25em;
@@ -409,7 +418,7 @@ html.modal-active, body.modal-active {
     width: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid rgba(215, 102, 102, 0.9);
+    border-bottom: 8px solid rgb(172, 172, 243);
   }
   .form .error-message.is-visible {
     opacity: 1;
@@ -462,18 +471,19 @@ html.modal-active, body.modal-active {
     font-size: 0.875rem;
   }
   .form-bottom-message a {
-    color: #FFF;
+    color: rgb(172, 172, 243);
     text-decoration: none;
       border-bottom: 1px solid rgba(255, 255, 255, .0);
       padding: 0 0 0 2px;
       -webkit-transition: all 0.30s ease-in-out;
+      transition: all 0.30s ease-in-out;
         -moz-transition: all 0.30s ease-in-out;
         -ms-transition: all 0.30s ease-in-out;
         -o-transition: all 0.30s ease-in-out;
   }
   .form-bottom-message a:hover {
       animation: borderslide-3px .5s;
-      border-bottom: 1px solid rgba(255, 255, 255, 1);
+      border-bottom: 1px solid rgb(172, 172, 243);
       padding-bottom: 3px;
   }
   
@@ -515,11 +525,12 @@ html.modal-active, body.modal-active {
   }
   
   .accept-terms {
-      color: #F64747;
+      color: rgb(172, 172, 243);
       text-decoration: none;
       padding: 0 1px 1px 2px;
       border-bottom: 1px solid rgba(246, 71, 71, .0);
       -webkit-transition: all 0.30s ease-in-out;
+      transition: all 0.30s ease-in-out;
         -moz-transition: all 0.30s ease-in-out;
         -ms-transition: all 0.30s ease-in-out;
         -o-transition: all 0.30s ease-in-out;
@@ -528,7 +539,7 @@ html.modal-active, body.modal-active {
   .accept-terms:hover {
       animation: borderslide-2px .5s;
       padding-bottom: 2px;
-      border-bottom: 1px solid rgba(246, 71, 71, 1);
+      border-bottom: 1px solid rgb(172, 172, 243);
   }
   
   #login, #signup, #reset-password {
@@ -538,4 +549,18 @@ html.modal-active, body.modal-active {
   #login.is-selected, #signup.is-selected, #reset-password.is-selected {
     display: block;
   }
+
+    .table-responsive tr:hover {
+      background-color: whitesmoke;
+    }
+
+        /* .text-gradient {
+          background: linear-gradient(to right, #8e2de2, #4a00e0);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        } */
+
+  
+    
   
